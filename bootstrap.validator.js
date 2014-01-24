@@ -61,15 +61,11 @@
     $.fn.bootstrap3Validate = function(success) {
         return this.validate({
 			'init': function() {
-				$('.has-error', this).removeClass('has-error').find('input').tooltip('destroy');
+				$('.has-error', this).removeClass('has-error').find('input,textarea').tooltip('destroy');
 				$('.alert').hide();
 				$('[rel=tooltip]', this).tooltip('destroy');
 			},
 			'success': function(e) {
-				// clear form
-				$("[type='text'],[type='password'],[type='tel'],[type='email'],textarea", self).val('');
-				$("select", self).prop("selectedIndex", 0);
-
 				if (typeof(success) === 'function') {
 					success.call(this, e);
 				}
