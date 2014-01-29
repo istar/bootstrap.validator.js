@@ -1,4 +1,4 @@
-# How to use it?
+# Use it without bootstrap
 
 ![Screenshot](screenshot.png "bootstrap.validator.js")
 
@@ -31,7 +31,7 @@
 * data-require: required or not
 * data-equals: To check value of 2 field are same or not. Just add it to first one.
 
-# For bootstrap3:
+# Use it with bootstrap3
 ###CSS
 	form .alert,
 	form .process
