@@ -70,11 +70,12 @@
 		</fieldset>
 	</form>
 ###Javascript (GET/POST submit)
-	$(selector).bootstrap3Validate();
+	$(selector).bootstrap3Validate(); // selector can be 'form'
 
 
 ###Javascript (Ajax submit)
-	$(selector).bootstrap3Validate(function(e) {
+	// selector can be 'form'
+	$(selector).bootstrap3Validate(function(e) { 
 		e.preventDefault();
 
 		$('.process', self).show();
