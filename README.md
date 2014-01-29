@@ -53,6 +53,11 @@
 					<span class="sr-only">Please wait...</span>
 				</div>
 			</div>
+			<div class="checkbox form-group">
+				<label class="control-label">
+					<input data-require="" name="accept" type="checkbox" value="true"> Accept?
+				</label>
+			</div>
 			<div class="alert alert-danger">
 
 			</div>
@@ -64,7 +69,11 @@
 			</div>
 		</fieldset>
 	</form>
-###Javascript
+###Javascript (GET/POST submit)
+	$(selector).bootstrap3Validate();
+
+
+###Javascript (Ajax submit)
 	$(selector).bootstrap3Validate(function(e) {
 		e.preventDefault();
 
