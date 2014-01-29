@@ -75,14 +75,16 @@
 	$(selector).bootstrap3Validate(function(e) { 
 		e.preventDefault();
 
+		var self = $(this);
+
 		$('.process', self).show();
 		$("[type='submit']", self).hide();
 		$(".alert-danger", self).hide();
 
 		$.ajax({
-			url: $(this).attr('action'),
-			data: $(this).serialize(),
-			type: $(this).attr('method'),
+			url: self.attr('action'),
+			data: self.serialize(),
+			type: self.attr('method'),
 		})
 		.done(function() {
 			$("[type='text']", self).val(''); // Clear
