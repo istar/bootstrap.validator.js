@@ -43,17 +43,25 @@
 		<fieldset>
 			<div class="form-group">
 				<label class="control-label">Sample:</label>
-				<input name="name" class="form-control" placeholder="Smaple item" data-title="aSmple message" data-require="" data-regex="^[a-zA-Z]{1,30}$" />
+				<input name="name" class="form-control" placeholder="Sample item" data-title="Sample message" data-require="" data-regex="^[a-zA-Z]{1,30}$" />
 			</div>
-			<div class="progress progress-striped active">
-				<div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-					<span class="sr-only">Please wait...</span>
-				</div>
+			<div class="form-group">
+				<label class="control-label">Select</label>
+				<select class="form-control" data-require="" name="select">
+					<option value="">Select one item please</option>
+					<option value="value1">Item1</option>
+					<option value="value2">Item2</option>
+				</select>
 			</div>
 			<div class="checkbox form-group">
 				<label class="control-label">
 					<input data-require="" name="accept" type="checkbox" value="true"> Accept?
 				</label>
+			</div>
+			<div class="progress progress-striped active">
+				<div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+					<span class="sr-only">Please wait...</span>
+				</div>
 			</div>
 			<div class="alert alert-danger">
 
