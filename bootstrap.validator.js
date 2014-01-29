@@ -22,6 +22,8 @@
                 var equals = self.attr('data-equals');
                 var value = self.val();
 
+                if(self.is("[type='checkbox']") && !self.is(":checked")) value='';
+
                 if(typeof(equals) != 'undefined') {
                     var target = $("[name='" + equals + "']", form);
                     var value2 = target.val();
