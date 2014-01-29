@@ -46,6 +46,10 @@
 				<input name="name" class="form-control" placeholder="Sample item" data-title="Sample message" data-require="" data-regex="^[a-zA-Z]{1,30}$" />
 			</div>
 			<div class="form-group">
+				<label class="control-label">Email:</label>
+				<input name="name" class="form-control" placeholder="Your email" data-title="Please use valid email address" data-require="" data-regex="email" />
+			</div>
+			<div class="form-group">
 				<label class="control-label">Select</label>
 				<select class="form-control" data-require="" name="select">
 					<option value="">Select one item please</option>
