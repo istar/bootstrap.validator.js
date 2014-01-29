@@ -39,11 +39,8 @@
 		display: none;
 	}
 ###HTML
-	<form id="add_subscriber" method="POST" action="/api?api=management&amp;add=subscriber">
+	<form method="POST" action="some_url_to_post_there">
 		<fieldset>
-			<!-- if edit == true, server make you able to override subscriber -->
-			<input type="text" name="edit" />
-
 			<div class="form-group">
 				<label class="control-label">Sample:</label>
 				<input name="name" class="form-control" placeholder="Smaple item" data-title="aSmple message" data-require="" data-regex="^[a-zA-Z]{1,30}$" />
