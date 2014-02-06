@@ -2,7 +2,7 @@
 
 ![Screenshot](screenshot.png "bootstrap.validator.js")
 
-Very simple and fast form regex based validator for Bootstap3. Also, you can use if without boostrap. It work perfect with Chrome, Firefox IE7+, and mobile browsers.
+Very simple and fast regex based validator form for Bootstap3. Also, you can use if without boostrap. It work perfect with Chrome, Firefox IE7+, and mobile browsers.
 
 ###HTML
 	<input
@@ -53,6 +53,9 @@ required or not
 **data-equals:**
 
 To check value of 2 field are same or not. Just add it to first one.
+
+
+
 
 # Use it with bootstrap3
 ###CSS
