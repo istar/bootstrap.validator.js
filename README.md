@@ -127,7 +127,7 @@ To check value of 2 field are same or not. Just add it to first one.
 			type: self.attr('method'),
 		})
 		.done(function() {
-			$("[type='text']", self).val(''); // Clear
+			self.get().reset(); // Clear form
 		})
 		.fail(function() {
 			$('.alert-danger', self).text('Error!').show();
