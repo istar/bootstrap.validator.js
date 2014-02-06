@@ -1,6 +1,6 @@
 ![Screenshot](screenshot.png "bootstrap.validator.js")
 
-Very simple and fast regex based form validator for Bootstap3. Also, you can use if without boostrap. It work perfect with Chrome, Firefox IE7+, and mobile browsers.
+Very simple and fast regex based form validator for Bootstap3. Also, you can use it without boostrap. It work perfect with Chrome, Firefox IE7+, and mobile browsers.
 
 ----
 # Use it without bootstrap
@@ -36,13 +36,14 @@ Error description. With $(invalids[i]).attr('data-title') you can get it. For bo
 
 **data-regex:**
 
-Validation regex. You can also put 'email' and 'tel'
+Validation regex. You can also put 'email' and 'tel'. Examples:
 
-Ex:
 ^[a-z]{1,10}$
+
 Means all a-z and length should be 1~10
 
 ^[0-1]{2}$
+
 Means just numbers between 10~99
 
 You can find thousand of sample regex by Goolging.
