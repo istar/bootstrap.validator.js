@@ -10,7 +10,7 @@
 		data-title="This is a message show after validation failed"
 		data-regex="^[a-z]{1,10}"
 		data-require=""
-		data-equals="name_or_the_second_field"
+		data-equals="name_of_the_second_field"
 	/>
 
 ###Javascript
@@ -57,10 +57,12 @@
 					<option value="value2">Item2</option>
 				</select>
 			</div>
-			<div class="checkbox form-group">
-				<label class="control-label">
-					<input data-require="" name="accept" type="checkbox" value="true"> Accept?
-				</label>
+			<div class="form-group">
+				<div class="checkbox">
+					<label class="control-label">
+						<input data-require="" name="accept" type="checkbox" value="true"> Accept?
+					</label>
+				</div>
 			</div>
 			<div class="progress progress-striped active">
 				<div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
