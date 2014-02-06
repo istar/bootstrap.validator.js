@@ -29,20 +29,27 @@ Very simple and fast form regex based validator for Bootstap3. Also, you can use
 		}
 	})
 
-* data-title: Error description. With $(invalids[i]).attr('data-title') you can get it. For bootstrap3Validate just put it there you don't need to do anything
-* data-regex: Validation regex. You can also put 'email' and 'tel'
+**data-title**
+Error description. With $(invalids[i]).attr('data-title') you can get it. For bootstrap3Validate just put it there you don't need to do anything
 
-  Ex:
-  ^[a-z]{1,10}$
-  Means all a-z and length should be 1~10
+**data-regex:**
 
-  ^[0-1]{2}$
-  Means just numbers between 10~99
+Validation regex. You can also put 'email' and 'tel'
 
-  You can find thousand of sample regex by Goolging.
+Ex:
+^[a-z]{1,10}$
+Means all a-z and length should be 1~10
 
-* data-require: required or not
-* data-equals: To check value of 2 field are same or not. Just add it to first one.
+^[0-1]{2}$
+Means just numbers between 10~99
+
+You can find thousand of sample regex by Goolging.
+
+**data-require**
+required or not
+
+**data-equals**
+To check value of 2 field are same or not. Just add it to first one.
 
 # Use it with bootstrap3
 ###CSS
