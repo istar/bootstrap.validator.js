@@ -2,16 +2,19 @@
 
 ![Screenshot](screenshot.png "bootstrap.validator.js")
 
+Very simple and fast form regex based validator for Bootstap3. Also, you can use if without boostrap. It work perfect with Chrome, Firefox IE7+, and mobile browsers.
+
 ###HTML
 	<input
 		name="name"
 		type="text"
 
 		data-title="This is a message show after validation failed"
-		data-regex="^[a-z]{1,10}"
+		data-regex="REGEX"
 		data-require=""
 		data-equals="name_of_the_second_field"
 	/>
+
 
 ###Javascript
 	$(selector).validate({
@@ -28,6 +31,14 @@
 
 * data-title: Error description. With $(invalids[i]).attr('data-title') you can get it. For bootstrap3Validate just put it there you don't need to do anything
 * data-regex: Validation regex. You can also put 'email' and 'tel'
+  Ex:
+  ^[a-z]{1,10}$
+  Means all a-z and length should be 1~10
+
+  ^[0-1]{2}$
+  Means just numbers between 10~99
+  
+  You can find thousand of sample regex by Goolging.
 * data-require: required or not
 * data-equals: To check value of 2 field are same or not. Just add it to first one.
 
