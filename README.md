@@ -42,7 +42,7 @@ Validation regex. You can also put 'email' and 'tel'. Examples:
 
 Means all a-z and length should be 1~10
 
-^[0-1]{2}$
+^[0-9]{2}$
 
 Means just numbers between 10~99
 
@@ -128,7 +128,7 @@ To check value of 2 field are same or not. Just add it to first one.
 			type: self.attr('method'),
 		})
 		.done(function() {
-			self.get().reset(); // Clear form
+			self[0].reset(); // Clear form
 		})
 		.fail(function() {
 			$('.alert-danger', self).text('Error!').show();
